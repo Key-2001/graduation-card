@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #242424;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+}
+
+.info-homie{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.location{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+#body-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+@media screen and (max-width: 900px) {
+  .info-homie{
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
+  }
+  .location{
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
+  }
+}
